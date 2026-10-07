@@ -1,0 +1,942 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "npm run evaluate:baseline",
+  "protocol": {
+    "calibration": "Threshold selected only on 28 images from 7 cameras by maximum balanced accuracy; ties prefer blocked recall, then proximity to 50.",
+    "test": "Frozen threshold evaluated on 40 images from the 4 cameras held out by the source paper, balanced 20 blocked / 20 clear.",
+    "model": "DrainGuard deterministic offline visual blockage score; COCO-SSD litter detections excluded because the source labels blockage, not object classes."
+  },
+  "selectedThreshold": 31,
+  "calibration": {
+    "threshold": 31,
+    "samples": 28,
+    "cameras": 7,
+    "confusionMatrix": {
+      "tp": 13,
+      "tn": 4,
+      "fp": 10,
+      "fn": 1
+    },
+    "accuracy": 0.607,
+    "accuracyWilson95": [
+      0.424,
+      0.764
+    ],
+    "balancedAccuracy": 0.607,
+    "precision": 0.565,
+    "recall": 0.929,
+    "specificity": 0.286,
+    "f1": 0.703
+  },
+  "test": {
+    "threshold": 31,
+    "samples": 40,
+    "cameras": 4,
+    "confusionMatrix": {
+      "tp": 19,
+      "tn": 1,
+      "fp": 19,
+      "fn": 1
+    },
+    "accuracy": 0.5,
+    "accuracyWilson95": [
+      0.352,
+      0.648
+    ],
+    "balancedAccuracy": 0.5,
+    "precision": 0.5,
+    "recall": 0.95,
+    "specificity": 0.05,
+    "f1": 0.655
+  },
+  "scoreSummary": {
+    "blockedMean": 60.35,
+    "clearMean": 63.7
+  },
+  "predictions": [
+    {
+      "id": "calibration-Cornwall_BoscastleMarine-blocked-01",
+      "camera": "Cornwall_BoscastleMarine",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 32,
+      "signals": {
+        "debrisTone": 0.056,
+        "texture": 0.0503,
+        "drainStructure": 0.3608
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_BoscastleMarine-blocked-02",
+      "camera": "Cornwall_BoscastleMarine",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 29,
+      "signals": {
+        "debrisTone": 0.0274,
+        "texture": 0.0391,
+        "drainStructure": 0.2698
+      },
+      "predicted": "clear"
+    },
+    {
+      "id": "calibration-Cornwall_BoscastleMarine-clear-01",
+      "camera": "Cornwall_BoscastleMarine",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 28,
+      "signals": {
+        "debrisTone": 0.017,
+        "texture": 0.0381,
+        "drainStructure": 0.2801
+      },
+      "predicted": "clear"
+    },
+    {
+      "id": "calibration-Cornwall_BoscastleMarine-clear-02",
+      "camera": "Cornwall_BoscastleMarine",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 28,
+      "signals": {
+        "debrisTone": 0.0202,
+        "texture": 0.0265,
+        "drainStructure": 0.2096
+      },
+      "predicted": "clear"
+    },
+    {
+      "id": "calibration-Cornwall_CawsandCP-blocked-01",
+      "camera": "Cornwall_CawsandCP",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 34,
+      "signals": {
+        "debrisTone": 0.1621,
+        "texture": 0,
+        "drainStructure": 0.0001
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_CawsandCP-blocked-02",
+      "camera": "Cornwall_CawsandCP",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 32,
+      "signals": {
+        "debrisTone": 0.1287,
+        "texture": 0,
+        "drainStructure": 0.001
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_CawsandCP-clear-01",
+      "camera": "Cornwall_CawsandCP",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 69,
+      "signals": {
+        "debrisTone": 0.6966,
+        "texture": 0,
+        "drainStructure": 0
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_CawsandCP-clear-02",
+      "camera": "Cornwall_CawsandCP",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 29,
+      "signals": {
+        "debrisTone": 0.0816,
+        "texture": 0,
+        "drainStructure": 0
+      },
+      "predicted": "clear"
+    },
+    {
+      "id": "calibration-Cornwall_IdlessDam_cam1-blocked-01",
+      "camera": "Cornwall_IdlessDam_cam1",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 31,
+      "signals": {
+        "debrisTone": 0.1009,
+        "texture": 0.0051,
+        "drainStructure": 0.059
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_IdlessDam_cam1-blocked-02",
+      "camera": "Cornwall_IdlessDam_cam1",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 55,
+      "signals": {
+        "debrisTone": 0.3374,
+        "texture": 0.1093,
+        "drainStructure": 0.7559
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_IdlessDam_cam1-clear-01",
+      "camera": "Cornwall_IdlessDam_cam1",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 86,
+      "signals": {
+        "debrisTone": 0.9699,
+        "texture": 0.003,
+        "drainStructure": 0.0237
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_IdlessDam_cam1-clear-02",
+      "camera": "Cornwall_IdlessDam_cam1",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 43,
+      "signals": {
+        "debrisTone": 0.2795,
+        "texture": 0.0097,
+        "drainStructure": 0.0908
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_KingsandPP-blocked-01",
+      "camera": "Cornwall_KingsandPP",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 45,
+      "signals": {
+        "debrisTone": 0.274,
+        "texture": 0.0431,
+        "drainStructure": 0.2955
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_KingsandPP-blocked-02",
+      "camera": "Cornwall_KingsandPP",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 34,
+      "signals": {
+        "debrisTone": 0.069,
+        "texture": 0.0679,
+        "drainStructure": 0.3345
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_KingsandPP-clear-01",
+      "camera": "Cornwall_KingsandPP",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 37,
+      "signals": {
+        "debrisTone": 0.1344,
+        "texture": 0.0514,
+        "drainStructure": 0.2658
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_KingsandPP-clear-02",
+      "camera": "Cornwall_KingsandPP",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 51,
+      "signals": {
+        "debrisTone": 0.3458,
+        "texture": 0.0601,
+        "drainStructure": 0.2903
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_PlymptonForSt-blocked-01",
+      "camera": "Cornwall_PlymptonForSt",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 86,
+      "signals": {
+        "debrisTone": 0.7354,
+        "texture": 0.1693,
+        "drainStructure": 0.9212
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_PlymptonForSt-blocked-02",
+      "camera": "Cornwall_PlymptonForSt",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 79,
+      "signals": {
+        "debrisTone": 0.6039,
+        "texture": 0.1887,
+        "drainStructure": 0.9517
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_PlymptonForSt-clear-01",
+      "camera": "Cornwall_PlymptonForSt",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 66,
+      "signals": {
+        "debrisTone": 0.4417,
+        "texture": 0.1579,
+        "drainStructure": 0.8627
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-Cornwall_PlymptonForSt-clear-02",
+      "camera": "Cornwall_PlymptonForSt",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 91,
+      "signals": {
+        "debrisTone": 0.7589,
+        "texture": 0.205,
+        "drainStructure": 0.9922
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-sites_sheptonmallet_cam2-blocked-01",
+      "camera": "sites_sheptonmallet_cam2",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 89,
+      "signals": {
+        "debrisTone": 0.8384,
+        "texture": 0.1266,
+        "drainStructure": 0.5217
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-sites_sheptonmallet_cam2-blocked-02",
+      "camera": "sites_sheptonmallet_cam2",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 92,
+      "signals": {
+        "debrisTone": 0.9208,
+        "texture": 0.1064,
+        "drainStructure": 0.5197
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-sites_sheptonmallet_cam2-clear-01",
+      "camera": "sites_sheptonmallet_cam2",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 92,
+      "signals": {
+        "debrisTone": 0.8855,
+        "texture": 0.1261,
+        "drainStructure": 0.544
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-sites_sheptonmallet_cam2-clear-02",
+      "camera": "sites_sheptonmallet_cam2",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 91,
+      "signals": {
+        "debrisTone": 0.8192,
+        "texture": 0.1687,
+        "drainStructure": 0.7955
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-sites_uphill_cam1-blocked-01",
+      "camera": "sites_uphill_cam1",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 90,
+      "signals": {
+        "debrisTone": 0.9542,
+        "texture": 0.0586,
+        "drainStructure": 0.3636
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-sites_uphill_cam1-blocked-02",
+      "camera": "sites_uphill_cam1",
+      "split": "calibration",
+      "actual": "blocked",
+      "score": 50,
+      "signals": {
+        "debrisTone": 0.3929,
+        "texture": 0.0124,
+        "drainStructure": 0.0914
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-sites_uphill_cam1-clear-01",
+      "camera": "sites_uphill_cam1",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 76,
+      "signals": {
+        "debrisTone": 0.8097,
+        "texture": 0.0021,
+        "drainStructure": 0.0231
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "calibration-sites_uphill_cam1-clear-02",
+      "camera": "sites_uphill_cam1",
+      "split": "calibration",
+      "actual": "clear",
+      "score": 29,
+      "signals": {
+        "debrisTone": 0.0643,
+        "texture": 0.0058,
+        "drainStructure": 0.0522
+      },
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-01",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 48,
+      "signals": {
+        "debrisTone": 0.3425,
+        "texture": 0.0286,
+        "drainStructure": 0.1509
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-02",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 94,
+      "signals": {
+        "debrisTone": 1.0504,
+        "texture": 0.042,
+        "drainStructure": 0.2171
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-03",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 77,
+      "signals": {
+        "debrisTone": 0.7393,
+        "texture": 0.0595,
+        "drainStructure": 0.3306
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-04",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 93,
+      "signals": {
+        "debrisTone": 0.9489,
+        "texture": 0.0923,
+        "drainStructure": 0.4848
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-05",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 94,
+      "signals": {
+        "debrisTone": 1.1099,
+        "texture": 0.0572,
+        "drainStructure": 0.281
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-01",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "clear",
+      "score": 80,
+      "signals": {
+        "debrisTone": 0.836,
+        "texture": 0.0336,
+        "drainStructure": 0.1517
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-02",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "clear",
+      "score": 89,
+      "signals": {
+        "debrisTone": 0.9614,
+        "texture": 0.0433,
+        "drainStructure": 0.1916
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-03",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "clear",
+      "score": 48,
+      "signals": {
+        "debrisTone": 0.3645,
+        "texture": 0.0023,
+        "drainStructure": 0.0357
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-04",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "clear",
+      "score": 91,
+      "signals": {
+        "debrisTone": 0.9978,
+        "texture": 0.0385,
+        "drainStructure": 0.1748
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-05",
+      "camera": "Cornwall_Crinnis",
+      "split": "audit",
+      "actual": "clear",
+      "score": 94,
+      "signals": {
+        "debrisTone": 1.1506,
+        "texture": 0.0433,
+        "drainStructure": 0.2319
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-01",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 34,
+      "signals": {
+        "debrisTone": 0.1612,
+        "texture": 0.0013,
+        "drainStructure": 0.0539
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-02",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 56,
+      "signals": {
+        "debrisTone": 0.4896,
+        "texture": 0.006,
+        "drainStructure": 0.0685
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-03",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 53,
+      "signals": {
+        "debrisTone": 0.4402,
+        "texture": 0.0059,
+        "drainStructure": 0.0562
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-04",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 35,
+      "signals": {
+        "debrisTone": 0.1759,
+        "texture": 0.0002,
+        "drainStructure": 0.011
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-05",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 30,
+      "signals": {
+        "debrisTone": 0.0966,
+        "texture": 0.0008,
+        "drainStructure": 0.0215
+      },
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-01",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "clear",
+      "score": 29,
+      "signals": {
+        "debrisTone": 0.0718,
+        "texture": 0,
+        "drainStructure": 0
+      },
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-02",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "clear",
+      "score": 33,
+      "signals": {
+        "debrisTone": 0.1455,
+        "texture": 0.0015,
+        "drainStructure": 0.0319
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-03",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "clear",
+      "score": 59,
+      "signals": {
+        "debrisTone": 0.5447,
+        "texture": 0.0007,
+        "drainStructure": 0.0299
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-04",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "clear",
+      "score": 53,
+      "signals": {
+        "debrisTone": 0.4458,
+        "texture": 0.001,
+        "drainStructure": 0.0307
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-05",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "split": "audit",
+      "actual": "clear",
+      "score": 53,
+      "signals": {
+        "debrisTone": 0.4479,
+        "texture": 0.0018,
+        "drainStructure": 0.0705
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-01",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 45,
+      "signals": {
+        "debrisTone": 0.2949,
+        "texture": 0.0273,
+        "drainStructure": 0.2046
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-02",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 76,
+      "signals": {
+        "debrisTone": 0.6858,
+        "texture": 0.0969,
+        "drainStructure": 0.5718
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-03",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 43,
+      "signals": {
+        "debrisTone": 0.2646,
+        "texture": 0.0271,
+        "drainStructure": 0.2037
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-04",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 80,
+      "signals": {
+        "debrisTone": 0.7762,
+        "texture": 0.0757,
+        "drainStructure": 0.4728
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-05",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 44,
+      "signals": {
+        "debrisTone": 0.2532,
+        "texture": 0.0473,
+        "drainStructure": 0.3275
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-01",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "clear",
+      "score": 74,
+      "signals": {
+        "debrisTone": 0.7402,
+        "texture": 0.0328,
+        "drainStructure": 0.1773
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-02",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "clear",
+      "score": 46,
+      "signals": {
+        "debrisTone": 0.3351,
+        "texture": 0.0103,
+        "drainStructure": 0.0845
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-03",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "clear",
+      "score": 69,
+      "signals": {
+        "debrisTone": 0.6831,
+        "texture": 0.0113,
+        "drainStructure": 0.0882
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-04",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "clear",
+      "score": 81,
+      "signals": {
+        "debrisTone": 0.7536,
+        "texture": 0.0985,
+        "drainStructure": 0.517
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-05",
+      "camera": "Devon_BarnstapleBradiford",
+      "split": "audit",
+      "actual": "clear",
+      "score": 52,
+      "signals": {
+        "debrisTone": 0.4204,
+        "texture": 0.0154,
+        "drainStructure": 0.1192
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-01",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 43,
+      "signals": {
+        "debrisTone": 0.284,
+        "texture": 0.0116,
+        "drainStructure": 0.0841
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-02",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 48,
+      "signals": {
+        "debrisTone": 0.3553,
+        "texture": 0.0171,
+        "drainStructure": 0.0942
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-03",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 79,
+      "signals": {
+        "debrisTone": 0.8547,
+        "texture": 0.0076,
+        "drainStructure": 0.0431
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-04",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 78,
+      "signals": {
+        "debrisTone": 0.836,
+        "texture": 0.0018,
+        "drainStructure": 0.0381
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-05",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "blocked",
+      "score": 57,
+      "signals": {
+        "debrisTone": 0.5065,
+        "texture": 0.011,
+        "drainStructure": 0.1234
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-01",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "clear",
+      "score": 64,
+      "signals": {
+        "debrisTone": 0.5938,
+        "texture": 0.0272,
+        "drainStructure": 0.2252
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-02",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "clear",
+      "score": 66,
+      "signals": {
+        "debrisTone": 0.6161,
+        "texture": 0.0259,
+        "drainStructure": 0.1839
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-03",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "clear",
+      "score": 73,
+      "signals": {
+        "debrisTone": 0.7265,
+        "texture": 0.0315,
+        "drainStructure": 0.1879
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-04",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "clear",
+      "score": 65,
+      "signals": {
+        "debrisTone": 0.6463,
+        "texture": 0.0001,
+        "drainStructure": 0.0055
+      },
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-05",
+      "camera": "sites_sistontunnel_cam1",
+      "split": "audit",
+      "actual": "clear",
+      "score": 55,
+      "signals": {
+        "debrisTone": 0.4384,
+        "texture": 0.032,
+        "drainStructure": 0.2009
+      },
+      "predicted": "blocked"
+    }
+  ]
+}

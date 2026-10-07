@@ -1,0 +1,51 @@
+{
+  "name": "drainguard-ai",
+  "version": "0.15.0",
+  "description": "AI-assisted environmental monitoring for explainable storm-drain cleanup prioritization and verification.",
+  "private": true,
+  "author": "Bhavya Keerthi",
+  "license": "MIT",
+  "homepage": "https://drainguard-ai-earth.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bhavyakeerthi3/drainguard-ai.git"
+  },
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "test": "npm run build && node --test tests/rendered-html.test.mjs tests/scoring.test.mjs",
+    "test:scoring": "node --test tests/scoring.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint app lib tests next.config.ts eslint.config.mjs"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "leaflet": "1.9.4",
+    "next": "^16.3.1",
+    "react": "19.2.6",
+    "react-dom": "19.2.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.4",
+    "@next/eslint-plugin-next": "^16.3.1",
+    "@tailwindcss/postcss": "4.2.1",
+    "@types/leaflet": "1.9.22",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "16.4.0",
+    "sharp": "^0.35.3",
+    "tailwindcss": "4.2.1",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.59.3"
+  },
+  "type": "module"
+}

@@ -1,0 +1,969 @@
+{
+  "schemaVersion": 1,
+  "seed": 20260820,
+  "imagePreparation": "Published trash-screen crop coordinates, EXIF transpose, RGB conversion, 224x224 Lanczos resize, JPEG quality 88",
+  "sampling": "Camera-disjoint audit: 7 calibration cameras with 2 images per class and 4 source-paper test cameras with 5 images per class.",
+  "source": {
+    "title": "Trash screen blockage detection using cameras and deep learning: code and dataset",
+    "creator": "Remy Vandaele",
+    "publisher": "University of Reading",
+    "year": 2023,
+    "url": "https://researchdata.reading.ac.uk/498/",
+    "doi": "https://doi.org/10.17864/1947.000498",
+    "license": "CC BY 4.0"
+  },
+  "entries": [
+    {
+      "id": "calibration-Cornwall_BoscastleMarine-blocked-01",
+      "split": "calibration",
+      "camera": "Cornwall_BoscastleMarine",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_BoscastleMarine-blocked-01.jpg",
+      "sourceMember": "images/Cornwall_BoscastleMarine/blocked/2022_03_17_08_58.jpg",
+      "crop": {
+        "xmin": 252,
+        "xmax": 535,
+        "ymin": 216,
+        "ymax": 597
+      }
+    },
+    {
+      "id": "calibration-Cornwall_BoscastleMarine-blocked-02",
+      "split": "calibration",
+      "camera": "Cornwall_BoscastleMarine",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_BoscastleMarine-blocked-02.jpg",
+      "sourceMember": "images/Cornwall_BoscastleMarine/blocked/2022_03_14_15_58.jpg",
+      "crop": {
+        "xmin": 252,
+        "xmax": 535,
+        "ymin": 216,
+        "ymax": 597
+      }
+    },
+    {
+      "id": "calibration-Cornwall_BoscastleMarine-clear-01",
+      "split": "calibration",
+      "camera": "Cornwall_BoscastleMarine",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_BoscastleMarine-clear-01.jpg",
+      "sourceMember": "images/Cornwall_BoscastleMarine/clear/2022_12_11_09_56.jpg",
+      "crop": {
+        "xmin": 252,
+        "xmax": 535,
+        "ymin": 216,
+        "ymax": 597
+      }
+    },
+    {
+      "id": "calibration-Cornwall_BoscastleMarine-clear-02",
+      "split": "calibration",
+      "camera": "Cornwall_BoscastleMarine",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_BoscastleMarine-clear-02.jpg",
+      "sourceMember": "images/Cornwall_BoscastleMarine/clear/2022_03_04_16_58.jpg",
+      "crop": {
+        "xmin": 252,
+        "xmax": 535,
+        "ymin": 216,
+        "ymax": 597
+      }
+    },
+    {
+      "id": "calibration-Cornwall_CawsandCP-blocked-01",
+      "split": "calibration",
+      "camera": "Cornwall_CawsandCP",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_CawsandCP-blocked-01.jpg",
+      "sourceMember": "images/Cornwall_CawsandCP/blocked/2023_01_05_13_01.jpg",
+      "crop": {
+        "xmin": 301,
+        "xmax": 371,
+        "ymin": 249,
+        "ymax": 309
+      }
+    },
+    {
+      "id": "calibration-Cornwall_CawsandCP-blocked-02",
+      "split": "calibration",
+      "camera": "Cornwall_CawsandCP",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_CawsandCP-blocked-02.jpg",
+      "sourceMember": "images/Cornwall_CawsandCP/blocked/2022_11_08_14_00.jpg",
+      "crop": {
+        "xmin": 301,
+        "xmax": 371,
+        "ymin": 249,
+        "ymax": 309
+      }
+    },
+    {
+      "id": "calibration-Cornwall_CawsandCP-clear-01",
+      "split": "calibration",
+      "camera": "Cornwall_CawsandCP",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_CawsandCP-clear-01.jpg",
+      "sourceMember": "images/Cornwall_CawsandCP/clear/2022_09_28_15_59.jpg",
+      "crop": {
+        "xmin": 301,
+        "xmax": 371,
+        "ymin": 249,
+        "ymax": 309
+      }
+    },
+    {
+      "id": "calibration-Cornwall_CawsandCP-clear-02",
+      "split": "calibration",
+      "camera": "Cornwall_CawsandCP",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_CawsandCP-clear-02.jpg",
+      "sourceMember": "images/Cornwall_CawsandCP/clear/2022_11_24_09_23.jpg",
+      "crop": {
+        "xmin": 301,
+        "xmax": 371,
+        "ymin": 249,
+        "ymax": 309
+      }
+    },
+    {
+      "id": "calibration-Cornwall_IdlessDam_cam1-blocked-01",
+      "split": "calibration",
+      "camera": "Cornwall_IdlessDam_cam1",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_IdlessDam_cam1-blocked-01.jpg",
+      "sourceMember": "images/Cornwall_IdlessDam_cam1/blocked/2022_11_22_10_53.jpg",
+      "crop": {
+        "xmin": 520,
+        "xmax": 1222,
+        "ymin": 354,
+        "ymax": 932
+      }
+    },
+    {
+      "id": "calibration-Cornwall_IdlessDam_cam1-blocked-02",
+      "split": "calibration",
+      "camera": "Cornwall_IdlessDam_cam1",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_IdlessDam_cam1-blocked-02.jpg",
+      "sourceMember": "images/Cornwall_IdlessDam_cam1/blocked/2022_12_17_13_50.jpg",
+      "crop": {
+        "xmin": 520,
+        "xmax": 1222,
+        "ymin": 354,
+        "ymax": 932
+      }
+    },
+    {
+      "id": "calibration-Cornwall_IdlessDam_cam1-clear-01",
+      "split": "calibration",
+      "camera": "Cornwall_IdlessDam_cam1",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_IdlessDam_cam1-clear-01.jpg",
+      "sourceMember": "images/Cornwall_IdlessDam_cam1/clear/2022_02_09_07_06.jpg",
+      "crop": {
+        "xmin": 520,
+        "xmax": 1222,
+        "ymin": 354,
+        "ymax": 932
+      }
+    },
+    {
+      "id": "calibration-Cornwall_IdlessDam_cam1-clear-02",
+      "split": "calibration",
+      "camera": "Cornwall_IdlessDam_cam1",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_IdlessDam_cam1-clear-02.jpg",
+      "sourceMember": "images/Cornwall_IdlessDam_cam1/clear/2022_03_29_18_55.jpg",
+      "crop": {
+        "xmin": 520,
+        "xmax": 1222,
+        "ymin": 354,
+        "ymax": 932
+      }
+    },
+    {
+      "id": "calibration-Cornwall_KingsandPP-blocked-01",
+      "split": "calibration",
+      "camera": "Cornwall_KingsandPP",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_KingsandPP-blocked-01.jpg",
+      "sourceMember": "images/Cornwall_KingsandPP/blocked/2022_11_21_10_12.jpg",
+      "crop": {
+        "xmin": 119,
+        "xmax": 406,
+        "ymin": 91,
+        "ymax": 209
+      }
+    },
+    {
+      "id": "calibration-Cornwall_KingsandPP-blocked-02",
+      "split": "calibration",
+      "camera": "Cornwall_KingsandPP",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_KingsandPP-blocked-02.jpg",
+      "sourceMember": "images/Cornwall_KingsandPP/blocked/2022_11_21_11_59.jpg",
+      "crop": {
+        "xmin": 119,
+        "xmax": 406,
+        "ymin": 91,
+        "ymax": 209
+      }
+    },
+    {
+      "id": "calibration-Cornwall_KingsandPP-clear-01",
+      "split": "calibration",
+      "camera": "Cornwall_KingsandPP",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_KingsandPP-clear-01.jpg",
+      "sourceMember": "images/Cornwall_KingsandPP/clear/2023_01_11_15_59.jpg",
+      "crop": {
+        "xmin": 119,
+        "xmax": 406,
+        "ymin": 91,
+        "ymax": 209
+      }
+    },
+    {
+      "id": "calibration-Cornwall_KingsandPP-clear-02",
+      "split": "calibration",
+      "camera": "Cornwall_KingsandPP",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_KingsandPP-clear-02.jpg",
+      "sourceMember": "images/Cornwall_KingsandPP/clear/2022_04_17_17_59.jpg",
+      "crop": {
+        "xmin": 119,
+        "xmax": 406,
+        "ymin": 91,
+        "ymax": 209
+      }
+    },
+    {
+      "id": "calibration-Cornwall_PlymptonForSt-blocked-01",
+      "split": "calibration",
+      "camera": "Cornwall_PlymptonForSt",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_PlymptonForSt-blocked-01.jpg",
+      "sourceMember": "images/Cornwall_PlymptonForSt/blocked/2022_10_17_10_52.jpg",
+      "crop": {
+        "xmin": 222,
+        "xmax": 482,
+        "ymin": 100,
+        "ymax": 478
+      }
+    },
+    {
+      "id": "calibration-Cornwall_PlymptonForSt-blocked-02",
+      "split": "calibration",
+      "camera": "Cornwall_PlymptonForSt",
+      "label": "blocked",
+      "file": "images/calibration-Cornwall_PlymptonForSt-blocked-02.jpg",
+      "sourceMember": "images/Cornwall_PlymptonForSt/blocked/2022_03_03_10_50.jpg",
+      "crop": {
+        "xmin": 222,
+        "xmax": 482,
+        "ymin": 100,
+        "ymax": 478
+      }
+    },
+    {
+      "id": "calibration-Cornwall_PlymptonForSt-clear-01",
+      "split": "calibration",
+      "camera": "Cornwall_PlymptonForSt",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_PlymptonForSt-clear-01.jpg",
+      "sourceMember": "images/Cornwall_PlymptonForSt/clear/2022_02_14_07_50.jpg",
+      "crop": {
+        "xmin": 222,
+        "xmax": 482,
+        "ymin": 100,
+        "ymax": 478
+      }
+    },
+    {
+      "id": "calibration-Cornwall_PlymptonForSt-clear-02",
+      "split": "calibration",
+      "camera": "Cornwall_PlymptonForSt",
+      "label": "clear",
+      "file": "images/calibration-Cornwall_PlymptonForSt-clear-02.jpg",
+      "sourceMember": "images/Cornwall_PlymptonForSt/clear/2022_10_07_09_51.jpg",
+      "crop": {
+        "xmin": 222,
+        "xmax": 482,
+        "ymin": 100,
+        "ymax": 478
+      }
+    },
+    {
+      "id": "calibration-sites_sheptonmallet_cam2-blocked-01",
+      "split": "calibration",
+      "camera": "sites_sheptonmallet_cam2",
+      "label": "blocked",
+      "file": "images/calibration-sites_sheptonmallet_cam2-blocked-01.jpg",
+      "sourceMember": "images/sites_sheptonmallet_cam2/blocked/2022_09_26_07_10.jpg",
+      "crop": {
+        "xmin": 504,
+        "xmax": 1258,
+        "ymin": 556,
+        "ymax": 792
+      }
+    },
+    {
+      "id": "calibration-sites_sheptonmallet_cam2-blocked-02",
+      "split": "calibration",
+      "camera": "sites_sheptonmallet_cam2",
+      "label": "blocked",
+      "file": "images/calibration-sites_sheptonmallet_cam2-blocked-02.jpg",
+      "sourceMember": "images/sites_sheptonmallet_cam2/blocked/2022_10_19_17_10.jpg",
+      "crop": {
+        "xmin": 504,
+        "xmax": 1258,
+        "ymin": 556,
+        "ymax": 792
+      }
+    },
+    {
+      "id": "calibration-sites_sheptonmallet_cam2-clear-01",
+      "split": "calibration",
+      "camera": "sites_sheptonmallet_cam2",
+      "label": "clear",
+      "file": "images/calibration-sites_sheptonmallet_cam2-clear-01.jpg",
+      "sourceMember": "images/sites_sheptonmallet_cam2/clear/2022_04_11_06_30.jpg",
+      "crop": {
+        "xmin": 504,
+        "xmax": 1258,
+        "ymin": 556,
+        "ymax": 792
+      }
+    },
+    {
+      "id": "calibration-sites_sheptonmallet_cam2-clear-02",
+      "split": "calibration",
+      "camera": "sites_sheptonmallet_cam2",
+      "label": "clear",
+      "file": "images/calibration-sites_sheptonmallet_cam2-clear-02.jpg",
+      "sourceMember": "images/sites_sheptonmallet_cam2/clear/2022_03_30_14_10.jpg",
+      "crop": {
+        "xmin": 504,
+        "xmax": 1258,
+        "ymin": 556,
+        "ymax": 792
+      }
+    },
+    {
+      "id": "calibration-sites_uphill_cam1-blocked-01",
+      "split": "calibration",
+      "camera": "sites_uphill_cam1",
+      "label": "blocked",
+      "file": "images/calibration-sites_uphill_cam1-blocked-01.jpg",
+      "sourceMember": "images/sites_uphill_cam1/blocked/2022_10_17_14_56.jpg",
+      "crop": {
+        "xmin": 332,
+        "xmax": 645,
+        "ymin": 294,
+        "ymax": 435
+      }
+    },
+    {
+      "id": "calibration-sites_uphill_cam1-blocked-02",
+      "split": "calibration",
+      "camera": "sites_uphill_cam1",
+      "label": "blocked",
+      "file": "images/calibration-sites_uphill_cam1-blocked-02.jpg",
+      "sourceMember": "images/sites_uphill_cam1/blocked/2022_03_15_14_56.jpg",
+      "crop": {
+        "xmin": 332,
+        "xmax": 645,
+        "ymin": 294,
+        "ymax": 435
+      }
+    },
+    {
+      "id": "calibration-sites_uphill_cam1-clear-01",
+      "split": "calibration",
+      "camera": "sites_uphill_cam1",
+      "label": "clear",
+      "file": "images/calibration-sites_uphill_cam1-clear-01.jpg",
+      "sourceMember": "images/sites_uphill_cam1/clear/2022_04_12_16_55.jpg",
+      "crop": {
+        "xmin": 332,
+        "xmax": 645,
+        "ymin": 294,
+        "ymax": 435
+      }
+    },
+    {
+      "id": "calibration-sites_uphill_cam1-clear-02",
+      "split": "calibration",
+      "camera": "sites_uphill_cam1",
+      "label": "clear",
+      "file": "images/calibration-sites_uphill_cam1-clear-02.jpg",
+      "sourceMember": "images/sites_uphill_cam1/clear/2022_02_13_10_55.jpg",
+      "crop": {
+        "xmin": 332,
+        "xmax": 645,
+        "ymin": 294,
+        "ymax": 435
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-01",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Crinnis-blocked-01.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/blocked/2023_01_07_10_00.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-02",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Crinnis-blocked-02.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/blocked/2022_09_20_07_00.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-03",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Crinnis-blocked-03.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/blocked/2022_11_17_09_00.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-04",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Crinnis-blocked-04.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/blocked/2022_10_01_14_00.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-05",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Crinnis-blocked-05.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/blocked/2022_09_19_18_00.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-01",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Crinnis-clear-01.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/clear/2022_03_27_15_10.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-02",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Crinnis-clear-02.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/clear/2022_02_03_15_08.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-03",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Crinnis-clear-03.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/clear/2022_02_05_13_08.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-04",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Crinnis-clear-04.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/clear/2022_03_28_09_10.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-05",
+      "split": "audit",
+      "camera": "Cornwall_Crinnis",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Crinnis-clear-05.jpg",
+      "sourceMember": "images/Cornwall_Crinnis/clear/2022_10_07_08_01.jpg",
+      "crop": {
+        "xmin": 340,
+        "xmax": 540,
+        "ymin": 300,
+        "ymax": 420
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-01",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-blocked-01.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/blocked/2022_02_15_12_58.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-02",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-blocked-02.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/blocked/2022_03_20_10_56.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-03",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-blocked-03.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/blocked/2022_03_15_10_58.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-04",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-blocked-04.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/blocked/2022_03_30_16_29.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-05",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "blocked",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-blocked-05.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/blocked/2022_03_02_13_56.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-01",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-clear-01.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/clear/2022_04_04_07_59.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-02",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-clear-02.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/clear/2022_04_02_08_57.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-03",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-clear-03.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/clear/2022_04_17_08_55.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-04",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-clear-04.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/clear/2022_03_18_15_59.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-05",
+      "split": "audit",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "label": "clear",
+      "file": "images/audit-Cornwall_Mevagissey_PreScree-clear-05.jpg",
+      "sourceMember": "images/Cornwall_Mevagissey_PreScree/clear/2022_01_31_10_57.jpg",
+      "crop": {
+        "xmin": 427,
+        "xmax": 563,
+        "ymin": 104,
+        "ymax": 183
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-01",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "blocked",
+      "file": "images/audit-Devon_BarnstapleBradiford-blocked-01.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/blocked/2022_02_21_15_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-02",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "blocked",
+      "file": "images/audit-Devon_BarnstapleBradiford-blocked-02.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/blocked/2022_10_19_10_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-03",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "blocked",
+      "file": "images/audit-Devon_BarnstapleBradiford-blocked-03.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/blocked/2022_02_21_16_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-04",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "blocked",
+      "file": "images/audit-Devon_BarnstapleBradiford-blocked-04.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/blocked/2022_10_12_07_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-05",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "blocked",
+      "file": "images/audit-Devon_BarnstapleBradiford-blocked-05.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/blocked/2022_02_18_08_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-01",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "clear",
+      "file": "images/audit-Devon_BarnstapleBradiford-clear-01.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/clear/2022_04_18_14_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-02",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "clear",
+      "file": "images/audit-Devon_BarnstapleBradiford-clear-02.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/clear/2022_02_27_08_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-03",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "clear",
+      "file": "images/audit-Devon_BarnstapleBradiford-clear-03.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/clear/2022_04_17_08_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-04",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "clear",
+      "file": "images/audit-Devon_BarnstapleBradiford-clear-04.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/clear/2022_03_23_11_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-05",
+      "split": "audit",
+      "camera": "Devon_BarnstapleBradiford",
+      "label": "clear",
+      "file": "images/audit-Devon_BarnstapleBradiford-clear-05.jpg",
+      "sourceMember": "images/Devon_BarnstapleBradiford/clear/2022_02_04_14_59.jpg",
+      "crop": {
+        "xmin": 113,
+        "xmax": 325,
+        "ymin": 199,
+        "ymax": 581
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-01",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "blocked",
+      "file": "images/audit-sites_sistontunnel_cam1-blocked-01.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/blocked/2022_02_08_16_07.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-02",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "blocked",
+      "file": "images/audit-sites_sistontunnel_cam1-blocked-02.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/blocked/2022_02_07_13_03.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-03",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "blocked",
+      "file": "images/audit-sites_sistontunnel_cam1-blocked-03.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/blocked/2022_10_17_09_03.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-04",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "blocked",
+      "file": "images/audit-sites_sistontunnel_cam1-blocked-04.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/blocked/2022_02_07_12_03.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-05",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "blocked",
+      "file": "images/audit-sites_sistontunnel_cam1-blocked-05.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/blocked/2023_01_05_10_02.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-01",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "clear",
+      "file": "images/audit-sites_sistontunnel_cam1-clear-01.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/clear/2022_12_17_10_03.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-02",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "clear",
+      "file": "images/audit-sites_sistontunnel_cam1-clear-02.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/clear/2022_01_29_15_06.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-03",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "clear",
+      "file": "images/audit-sites_sistontunnel_cam1-clear-03.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/clear/2022_04_18_11_04.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-04",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "clear",
+      "file": "images/audit-sites_sistontunnel_cam1-clear-04.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/clear/2022_09_24_16_06.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-05",
+      "split": "audit",
+      "camera": "sites_sistontunnel_cam1",
+      "label": "clear",
+      "file": "images/audit-sites_sistontunnel_cam1-clear-05.jpg",
+      "sourceMember": "images/sites_sistontunnel_cam1/clear/2022_09_25_13_05.jpg",
+      "crop": {
+        "xmin": 280,
+        "xmax": 474,
+        "ymin": 267,
+        "ymax": 341
+      }
+    }
+  ]
+}

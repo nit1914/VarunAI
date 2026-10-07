@@ -1,0 +1,11 @@
+node_modules
+.next
+work
+outputs
+evaluation/
+scripts/
+tests/
+docs/
+requirements-evaluation.txt
+README.md
+LICENSE

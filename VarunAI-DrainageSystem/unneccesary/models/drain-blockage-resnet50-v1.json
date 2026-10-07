@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "model": "/models/drain-blockage-resnet50-v1.onnx",
+  "architecture": "Published ResNet-50 binary blockage classifier, statically quantized to INT8 for browser inference",
+  "threshold": 0.5,
+  "input": {
+    "width": 224,
+    "height": 224,
+    "layout": "NCHW",
+    "color": "RGB",
+    "normalization": "ImageNet"
+  },
+  "evaluation": {
+    "threshold": 0.5,
+    "samples": 40,
+    "cameras": 4,
+    "confusionMatrix": {
+      "tp": 20,
+      "tn": 17,
+      "fp": 3,
+      "fn": 0
+    },
+    "accuracy": 0.925,
+    "accuracyWilson95": [
+      0.801,
+      0.974
+    ],
+    "balancedAccuracy": 0.925,
+    "precision": 0.87,
+    "recall": 1.0,
+    "specificity": 0.85,
+    "f1": 0.93
+  },
+  "evaluationScope": "Threshold calibrated on 28 images from 7 non-test cameras; local audit uses 40 balanced images from the four cameras held out by the source paper."
+}

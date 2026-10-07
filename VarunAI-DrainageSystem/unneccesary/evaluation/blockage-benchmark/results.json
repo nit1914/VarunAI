@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 2,
+  "model": "Published ResNet-50 binary blockage classifier, statically quantized to INT8 for browser inference",
+  "source": {
+    "datasetDoi": "https://doi.org/10.17864/1947.000498",
+    "paperDoi": "https://doi.org/10.2166/hydro.2024.013",
+    "license": "CC BY 4.0; source images are Crown Copyright under OGL v3.0",
+    "paperReportedBalancedAccuracy": 0.88
+  },
+  "protocol": "Threshold calibrated on 28 images from 7 non-test cameras; local audit uses 40 balanced images from the four cameras held out by the source paper.",
+  "selectedThreshold": 0.5,
+  "calibration": {
+    "threshold": 0.5,
+    "samples": 28,
+    "cameras": 7,
+    "confusionMatrix": {
+      "tp": 14,
+      "tn": 14,
+      "fp": 0,
+      "fn": 0
+    },
+    "accuracy": 1.0,
+    "accuracyWilson95": [
+      0.879,
+      1.0
+    ],
+    "balancedAccuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "specificity": 1.0,
+    "f1": 1.0
+  },
+  "test": {
+    "threshold": 0.5,
+    "samples": 40,
+    "cameras": 4,
+    "confusionMatrix": {
+      "tp": 20,
+      "tn": 17,
+      "fp": 3,
+      "fn": 0
+    },
+    "accuracy": 0.925,
+    "accuracyWilson95": [
+      0.801,
+      0.974
+    ],
+    "balancedAccuracy": 0.925,
+    "precision": 0.87,
+    "recall": 1.0,
+    "specificity": 0.85,
+    "f1": 0.93
+  },
+  "maximumQuantizationDifference": 0.111196,
+  "modelBytes": 24034992,
+  "predictions": [
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-01",
+      "camera": "Cornwall_Crinnis",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-02",
+      "camera": "Cornwall_Crinnis",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-03",
+      "camera": "Cornwall_Crinnis",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-04",
+      "camera": "Cornwall_Crinnis",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-blocked-05",
+      "camera": "Cornwall_Crinnis",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-01",
+      "camera": "Cornwall_Crinnis",
+      "actual": "clear",
+      "blockedProbability": 0.984314,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-02",
+      "camera": "Cornwall_Crinnis",
+      "actual": "clear",
+      "blockedProbability": 0.129412,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-03",
+      "camera": "Cornwall_Crinnis",
+      "actual": "clear",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-04",
+      "camera": "Cornwall_Crinnis",
+      "actual": "clear",
+      "blockedProbability": 0.972549,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Crinnis-clear-05",
+      "camera": "Cornwall_Crinnis",
+      "actual": "clear",
+      "blockedProbability": 0.0,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-01",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "blocked",
+      "blockedProbability": 0.956863,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-02",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "blocked",
+      "blockedProbability": 0.988235,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-03",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "blocked",
+      "blockedProbability": 0.847059,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-04",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-blocked-05",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "blocked",
+      "blockedProbability": 0.709804,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-01",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "clear",
+      "blockedProbability": 0.011765,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-02",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "clear",
+      "blockedProbability": 0.027451,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-03",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "clear",
+      "blockedProbability": 0.007843,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-04",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "clear",
+      "blockedProbability": 0.003922,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Cornwall_Mevagissey_PreScree-clear-05",
+      "camera": "Cornwall_Mevagissey_PreScree",
+      "actual": "clear",
+      "blockedProbability": 0.117647,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-01",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-02",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "blocked",
+      "blockedProbability": 0.541176,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-03",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "blocked",
+      "blockedProbability": 0.964706,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-04",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "blocked",
+      "blockedProbability": 0.886275,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-blocked-05",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-01",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "clear",
+      "blockedProbability": 0.035294,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-02",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "clear",
+      "blockedProbability": 0.0,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-03",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "clear",
+      "blockedProbability": 0.0,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-04",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "clear",
+      "blockedProbability": 0.003922,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-Devon_BarnstapleBradiford-clear-05",
+      "camera": "Devon_BarnstapleBradiford",
+      "actual": "clear",
+      "blockedProbability": 0.003922,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-01",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-02",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-03",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-04",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "blocked",
+      "blockedProbability": 0.996078,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-blocked-05",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "blocked",
+      "blockedProbability": 0.992157,
+      "predicted": "blocked"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-01",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "clear",
+      "blockedProbability": 0.003922,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-02",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "clear",
+      "blockedProbability": 0.015686,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-03",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "clear",
+      "blockedProbability": 0.286275,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-04",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "clear",
+      "blockedProbability": 0.003922,
+      "predicted": "clear"
+    },
+    {
+      "id": "audit-sites_sistontunnel_cam1-clear-05",
+      "camera": "sites_sistontunnel_cam1",
+      "actual": "clear",
+      "blockedProbability": 0.003922,
+      "predicted": "clear"
+    }
+  ]
+}
