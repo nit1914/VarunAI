@@ -2,14 +2,11 @@
 
 > Stop street waste before the next storm moves it downstream.
 
-[![Quality checks](https://github.com/bhavyakeerthi3/drainguard-ai/actions/workflows/ci.yml/badge.svg)](https://github.com/bhavyakeerthi3/drainguard-ai/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/license-MIT-111827.svg)](LICENSE)
-
-**Varun AI** (formerly known as DrainGuard AI) is a smart, AI-assisted environmental monitoring system built to prioritize and verify storm-drain and waterway cleanups. A field worker uploads a street photo, and the app uses advanced artificial intelligence (Google Gemini 2.5 Flash + robust visual heuristics) to analyze visual evidence. It combines blockage and litter signals with location-specific rainfall and mapped waterway context, ranking the report for immediate action. 
+**Varun AI** is a smart, AI-assisted environmental monitoring system built to prioritize and verify storm-drain and waterway cleanups. A field worker uploads a street photo, and the app uses advanced artificial intelligence (Google Gemini 2.5 Flash + robust visual heuristics) to analyze visual evidence. It combines blockage and litter signals with location-specific rainfall and mapped waterway context, ranking the report for immediate action. 
 
 ---
 
-## 🚀 How to Run Varun AI on Any Device (Easy Setup)
+## 🚀 How to Run Varun AI Locally (Easy Setup)
 
 Setting up Varun AI is incredibly easy! You can run this project on a Windows, Mac, or Linux computer by following these simple steps.
 
@@ -20,19 +17,19 @@ Setting up Varun AI is incredibly easy! You can run this project on a Windows, M
 ### Step 1: Get the Code
 Download this repository to your computer. Open your terminal or command prompt and run:
 ```bash
-git clone https://github.com/bhavyakeerthi3/drainguard-ai.git
-cd drainguard-ai
+git clone https://github.com/niteshislol/VarunAI.git
+cd VarunAI/VarunAI-DrainageSystem
 ```
 
 ### Step 2: Install Dependencies
-Make sure you are inside the project folder (`VarunAI-DrainageSystem` or `drainguard-ai`), and run:
+Make sure you are inside the `VarunAI-DrainageSystem` folder, and run:
 ```bash
 npm install
 ```
 
 ### Step 3: Add Your Gemini API Key
 Varun AI uses Google's powerful Gemini 2.5 Flash model to analyze images. 
-1. Create a new file in the root folder of the project and name it exactly: `.env`
+1. Create a new file in the root folder of the project (`VarunAI-DrainageSystem`) and name it exactly: `.env`
 2. Open the `.env` file in any text editor and add this single line:
    ```text
    GEMINI_API_KEY=your_actual_api_key_here
@@ -66,7 +63,6 @@ It is a prioritization aid, not a flood predictor or replacement for engineering
 - **Environmental Context**: Fetches rainfall for each report's latitude and longitude through a validated server endpoint backed by Open-Meteo.
 - **Waterway Mapping**: Looks up nearby rivers, streams, canals, and water bodies through OpenStreetMap / Overpass.
 - **Explainable priority score**: Explains every factor and contribution behind the result (Blockage, Litter, Rain).
-- **Controlled scenarios**: Explores dry, moderate, and heavy controlled rainfall scenarios without presenting them as forecasts.
 
 ## 📊 Complete product workflow
 
@@ -80,9 +76,8 @@ It is a prioritization aid, not a flood predictor or replacement for engineering
 
 Varun AI uses a layered evidence pipeline:
 1. **Gemini 2.5 Flash Vision Engine** — Processes the image securely on the server to extract blockage severity, litter density, obstruction types, and recommended interventions.
-2. **Robust Heuristic Fallback** — If Gemini is offline, the system falls back to a deterministic, offline visual scorer that analyzes image structure, edge geometry, natural-scene color, and debris-tone signals (powered by `sharp`).
-3. **Litter detection** — Client-side COCO-SSD historically identified visible objects, now enhanced by the server-side LLM.
-4. **Same-drain verification** — Normalized low-resolution scene fingerprints compare before/after composition to ensure a 68% scene match.
+2. **Robust Heuristic Fallback** — If Gemini is offline, the system falls back to a deterministic, offline visual scorer that analyzes image structure, edge geometry, natural-scene color, and debris-tone signals.
+3. **Same-drain verification** — Normalized low-resolution scene fingerprints compare before/after composition to ensure a 68% scene match.
 
 ## 🏗️ Architecture
 
@@ -114,51 +109,16 @@ flowchart LR
 - OpenStreetMap Overpass environmental-context lookup
 - Vercel deployment
 
-## ⚖️ Decision policy in one view
-
-```text
-priority = 0.55 × blockage + 0.30 × rainfall index + 0.15 × litter
-```
-The operational bands are `0–59 Monitor`, `60–79 Inspect today`, and `80–100 Dispatch now`. 
-
-Cleanup closes only when all of these pass:
-- same-drain scene match >= 68%
-- drain confidence >= 60%
-- remaining blockage <= 48%
-- remaining litter <= 48%
-- blockage reduction >= 15 points
-
-## 🧪 Quality checks
-
-```bash
-npm run lint
-npm run typecheck
-npm run test:scoring
-npm test
-```
-The automated suite verifies the production build, risk formula, live map wiring, cleanup workflow, safeguards, and decision-regression cases.
-
 ## 🔐 Privacy and persistence
 
 Photo analysis runs efficiently on the server (Gemini/Node.js). Reports and compressed evidence currently persist in browser storage on the inspection device. A shared authenticated municipal backend is planned for multi-user deployments.
-
-## ⚠️ Known limitations
-
-- Image evidence estimates visible obstruction; it does not measure hydraulic capacity or pollution volume.
-- Browser storage is device-local. Reports are not shared between users or devices.
-- Real municipal use still needs field validation, authentication, retention controls, and an audit log.
-
-## 🤝 Responsible use
-
-Varun AI prioritizes visual inspections. Environmental scores are decision-support estimates, not hydrological predictions. Emergency response, hydraulic modelling, and engineering decisions must remain with qualified authorities.
 
 ## 📜 Data and service attribution
 
 - Weather: [Open-Meteo](https://open-meteo.com/)
 - Maps: [OpenStreetMap](https://www.openstreetmap.org/) and [Leaflet](https://leafletjs.com/)
 - AI Models: [Google Gemini](https://deepmind.google/technologies/gemini/)
-- Upstream Research: [University of Reading Research Data Archive](https://doi.org/10.17864/1947.000498)
 
 ## 📝 License
 
-Varun AI application code is released under the [MIT License](LICENSE). 
+Varun AI application code is released under the MIT License.
